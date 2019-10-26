@@ -20,4 +20,5 @@ to create app -  python manage.py startapp app_name<br>
 to migrate - python manage.py migrate<br>
 to load static - python manage.py collectstatic<br><br><br>
 
-
+#### To deactivate virtual environment
+&emsp;&emsp;  deactivate
