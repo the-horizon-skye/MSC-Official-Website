@@ -1,8 +1,8 @@
 # MSC-Official-Website
 ## Main website of Msc
-### for requirement check requirement.txt<br>
+#### For requirement check requirement.txt<br>
 
-### To Run Django server
+#### To Run Django server
 -First activate the vertual environment(venv) <br>
 &emsp;&emsp; . venv/bin/activate or source venv/bin/activate<br>
 -Change dir to MSC_website<br>
@@ -12,7 +12,7 @@
 #### while running
 python manage.py makemigrations<br>
 python manage.py migrate<br>
-python manage.py runserver <br>
+python manage.py runserver <br><br><br>
 to create a superuser - python manage.py createsuperuser<br>
 to create project -   django-admin startproject project_name<br>
 to run local server-   python manage.py runserver<br>
