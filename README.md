@@ -1,13 +1,14 @@
 # MSC-Official-Website
 ## Main website of Msc
-### requirement<br>
-python <br>
-django <br>
-pillow <br>
+### for requirement check requirement.txt<br>
 
-### To Run Django
--activate the vertual environment(venv) <br>
-&emsp;&emsp; . venv/bin/activate<br>
+### To Run Django server
+-First activate the vertual environment(venv) <br>
+&emsp;&emsp; . venv/bin/activate or source venv/bin/activate<br>
+-Change dir to MSC_website<br>
+&emsp;&emsp; cd MSC_website<br>
+-Runserver<br>
+&emsp;&emsp; python manage.py runserver<br><br>
 #### while running
 python manage.py makemigrations<br>
 python manage.py migrate<br>
