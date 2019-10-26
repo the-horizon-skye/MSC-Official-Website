@@ -4,7 +4,7 @@
 
 #### To Run Django server
 -First activate the vertual environment(venv) <br>
-&emsp;&emsp; . venv/bin/activate or source venv/bin/activate<br>
+&emsp;&emsp; . venv/bin/activate    or    source venv/bin/activate<br>
 -Change dir to MSC_website<br>
 &emsp;&emsp; cd MSC_website<br>
 -Runserver<br>
