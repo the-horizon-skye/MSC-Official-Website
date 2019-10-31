@@ -1,10 +1,15 @@
 # MSC-Official-Website
 ## Main website of Msc
 #### For requirement check requirement.txt<br>
+##### Use Git Bash For Windows to run all the commands
 
 #### To Run Django server
--First activate the vertual environment(venv) <br>
+-First activate the virtual environment(venv) <br>
 &emsp;&emsp; . venv/bin/activate    or    source venv/bin/activate<br>
+-To activate the virtual env in Windows
+&emsp;&emsp; As venv is made in Ubuntu/MAC to activate it in Windows we will be using Git Bash.
+&emsp;&emsp; Go in the directory venv
+&emsp;&emsp;&emsp;&emsp;source ./bin/activate
 -Change dir to MSC_website<br>
 &emsp;&emsp; cd MSC_website<br>
 -Runserver<br>
