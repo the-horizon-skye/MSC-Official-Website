@@ -6,10 +6,10 @@
 #### To Run Django server
 -First activate the virtual environment(venv) <br>
 &emsp;&emsp; . venv/bin/activate    or    source venv/bin/activate<br>
--To activate the virtual env in Windows
-&emsp;&emsp; As venv is made in Ubuntu/MAC to activate it in Windows we will be using Git Bash.
-&emsp;&emsp; Go in the directory venv
-&emsp;&emsp;&emsp;&emsp;source ./bin/activate
+-To activate the virtual env in Windows<br>
+&emsp;&emsp; As venv is made in Ubuntu/MAC to activate it in Windows we will be using Git Bash.<br>
+&emsp;&emsp; Go in the directory venv<br>
+&emsp;&emsp;&emsp;&emsp;source ./bin/activate<br>
 -Change dir to MSC_website<br>
 &emsp;&emsp; cd MSC_website<br>
 -Runserver<br>
