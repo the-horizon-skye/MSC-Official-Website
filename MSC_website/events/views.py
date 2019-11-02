@@ -35,7 +35,7 @@ def register(request):
                     form.cleaned_data['email'],
                     form.cleaned_data['roll_number']
                 )
-                user.your_name = form.cleaned_data['your_name']
+                user.name = form.cleaned_data['name']
                 user.branch = form.cleaned_data['branch']
                 user.college = form.cleaned_data['college']
                 user.save()
