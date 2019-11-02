@@ -10,4 +10,4 @@ def home(request):
 
 # for the registeration page -- /events/register/
 def register(request):
-    return HttpResponse('You are in registration page')
+    return HttpResponse('You are in Events page')
