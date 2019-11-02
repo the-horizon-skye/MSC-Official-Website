@@ -1,0 +1,13 @@
+
+
+{% block content %}
+    <div class="container">
+        <form  method="post">
+            {{form.as_p}}
+            {% csrf_token %}
+            <div class="col-md-6 col-md-offset-4">-->
+                <input type="submit" value="Register" class="btn btn-success">
+            </div>
+        </form>
+    </div>
+{% endblock %}
