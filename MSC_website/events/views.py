@@ -13,7 +13,7 @@ def home(request):
 # for the registeration page -- /events/register/
 def register(request):
     #Template for the form
-    template = 'events/templates/register.html'
+    template = 'events/register.html'
     # request method POST
     if request.method == 'POST':
         # creating the form
@@ -40,7 +40,7 @@ def register(request):
                 user.college = form.cleaned_data['college']
                 user.save()
                 # redirect to successful registration page
-                return HttpResponseRedirect('events/templates/success.html')
+                return HttpResponseRedirect('events/success.html')
 
     else:
         form = Register
