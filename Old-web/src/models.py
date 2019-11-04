@@ -36,7 +36,9 @@ class Secretarie(models.Model):
         im = Image.open(self.Image)
 
         output = BytesIO()
+        < label
 
+        class ="checkbox" >
 		#Resize/modify the image
         im = im.resize( (250,250) )
 
