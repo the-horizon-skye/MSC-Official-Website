@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'index',
     'members',
-    'events.apps.EventsConfig',
+    'events',
     'import_export'
 ]
 

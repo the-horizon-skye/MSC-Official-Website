@@ -1,17 +1,6 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-{% load staticfiles %}
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Microsoft Student Chapter</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
 {% block body %}
 <body>
-
-<center><H1>SECRETARIES</H1></center>
+<center><H1>Executives</H1></center>
 <div class="button-group">
       <a href="{% url 'secretaries' %}" class="btn btn-primary btn-md btn-trim" role="button"> Secretaries</a>
 
@@ -32,11 +21,11 @@
 
     <tbody>
 
-      {% for s in sec %}
+      {% for exe in exec %}
       <tr>
-        <td>{{s.name}}</td>
-        <td>{{s.designation}}</td>
-        <td><img src = "{{s.photourl}}" ></td>
+        <td>{{exe.name}}</td>
+        <td>{{exe.designation}}</td>
+        <td><img src = "{{exe.photourl}}" ></td>
       </tr>
     {% endfor %}
     </tbody>

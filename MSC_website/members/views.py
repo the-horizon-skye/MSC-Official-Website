@@ -7,12 +7,31 @@ from .models import *
 
 # for the members page -- /members/
 def home(request):
+    return HttpResponse("You are in The Home Page of Members")
+
+def secretaries(request):
+    sec = Secretaries.objects.all()
+    context = {
+        'sec': sec,
+        'header': 'Secretaries',
+    }
+    return render(request,'members/main.html',context)
+def core(request):
+    core = Core.objects.all()
+    context = {
+        'core': core,
+        'header': 'Core',
+    }
+    return render(request,'members/core.html',context)
+
+def exec(request):
     exec = Executive.objects.all()
     context = {
         'exec': exec,
         'header': 'Executives',
     }
-    return render(request,'members/main.html',context)
+    return render(request,'members/exec.html',context)
+
 
 # for the gallery in members -- /members/gallery/
 def gallery(request):
