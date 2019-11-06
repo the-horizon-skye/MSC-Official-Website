@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+{% load staticfiles %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Microsoft Student Chapter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+{% block body %}
+<body>
+ <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>Pic</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      {% for exe in exec %}
+      <tr>
+        <td>{{exe.name}}</td>
+        <td>{{exe.designation}} $</td>
+        <td><img src = "{{exe.photourl}}" ></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+ </table>
+</body>
+{% endblock %}

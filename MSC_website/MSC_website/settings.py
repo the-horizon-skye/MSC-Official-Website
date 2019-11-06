@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'index',
     'members',
     'events.apps.EventsConfig',
+    'import_export'
 ]
 
 MIDDLEWARE = [
