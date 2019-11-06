@@ -15,7 +15,7 @@ def secretaries(request):
         'sec': sec,
         'header': 'Secretaries',
     }
-    return render(request,'members/main.html',context)
+    return render(request,'members/secretaries.html',context)
 def core(request):
     core = Core.objects.all()
     context = {
