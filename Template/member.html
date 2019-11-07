@@ -25,16 +25,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper.css">
     <style>
-        body {
+        /*body {
             background: #000;
-        }
+        }*/
 
         .swiper-container {
             width: 100%;
-            height: 600px;
+            height: 300px;
             margin: 20px auto;
-        }
 
+        }
+      
         .swiper-slide-container {
             text-align: center;
             font-size: 18px;
@@ -70,8 +71,11 @@
 
         .gallery-thumbs .swiper-slide {
             width: 20%;
-            height: 100%;
+            height: 100%;;
             opacity: 0.4;
+        }
+        .gallery-thumbs .swiper-slide img{
+            height:100px;
         }
 
         .gallery-thumbs .swiper-slide-active {
@@ -438,7 +442,7 @@
             <div class="swiper-container gallery-top">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="swiper-slide-container"><img src="./img/elements/a.jpg" alt=""></div>
+                        <div class="swiper-slide-container"><img src="./img/banner/back.png" height="300px" alt=""></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-container"><img src="./img/elements/a.jpg" alt=""></div>
@@ -460,7 +464,7 @@
             <div class="swiper-container gallery-thumbs">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="swiper-slide-container"><img src="./img/elements/a.jpg" alt=""></div>
+                        <div class="swiper-slide-container"><img src="./img/banner/back.png" alt=""></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-slide-container"><img src="./img/elements/a.jpg" alt=""></div>
@@ -556,7 +560,9 @@
                 prevEl: '.swiper-button-prev',
             },
             loop: true,
-            loopedSlides: 4
+            loopedSlides: 4,
+            height:300,
+            
         });
         var galleryThumbs = new Swiper('.gallery-thumbs', {
             spaceBetween: 10,
@@ -565,7 +571,8 @@
             touchRatio: 0.2,
             slideToClickedSlide: true,
             loop: true,
-            loopedSlides: 4
+            loopedSlides: 4,
+            height:300,
         });
         galleryTop.controller.control = galleryThumbs;
         galleryThumbs.controller.control = galleryTop;
