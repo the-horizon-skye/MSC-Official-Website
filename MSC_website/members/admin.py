@@ -4,6 +4,6 @@ from .models import *
 # Register your models here.
 
 # admin.site.register(item)
-@admin.register(Secretaries, Core, Executive)
+@admin.register(Secretaries, Core, Executive,gallery)
 class ViewAdmin(ImportExportModelAdmin):
     exclude = ('id', )

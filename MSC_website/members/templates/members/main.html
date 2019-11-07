@@ -245,21 +245,11 @@
 
             <div class="swiper-container gallery-top">
                 <div class="swiper-wrapper">
+                    {% for g in gal %}
                     <div class="swiper-slide">
-                        <div class="swiper-slide-container"><img src="./img/banner/back.png" height="300px" alt=""></div>
+                        <div class="swiper-slide-container"><img src="{{g.picurl}}" height="300px" alt=""></div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-container"><img src="./img/elements/a.jpg" alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-container"><img src="./img/elements/a.jpg" alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-container"><img src="./img/elements/a.jpg" alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-container"><img src="./img/elements/a.jpg" alt=""></div>
-                    </div>
+                    {% endfor %}
                 </div>
                 <!-- Add Arrows -->
                 <div class="swiper-button-next"></div>
@@ -267,21 +257,11 @@
             </div>
             <div class="swiper-container gallery-thumbs">
                 <div class="swiper-wrapper">
+                    {% for g in gal %}
                     <div class="swiper-slide">
-                        <div class="swiper-slide-container"><img src="./img/banner/back.png" alt=""></div>
+                        <div class="swiper-slide-container"><img src="{{g.picurl}}" alt=""></div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-container"><img src="./img/elements/a.jpg" alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-container"><img src="./img/elements/a.jpg" alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-container"><img src="./img/elements/a.jpg" alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-container"><img src="./img/elements/a.jpg" alt=""></div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

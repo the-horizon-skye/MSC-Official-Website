@@ -10,6 +10,7 @@ def home(request):
     sec = Secretaries.objects.all()
     core = Core.objects.all()
     exec = Executive.objects.all()
+    gal = gallery.objects.all()
     context = {
         'sec': sec,
         'header': 'Secretaries',
@@ -17,33 +18,7 @@ def home(request):
         'header': 'Core',
         'exec': exec,
         'header': 'Executives',
+        'gal': gal,
+        'header': 'Gallery',
     }
     return render(request, 'members/main.html',context)
-
-# def secretaries(request):
-#     sec = Secretaries.objects.all()
-#     context = {
-#         'sec': sec,
-#         'header': 'Secretaries',
-#     }
-#     return render(request,'members/secretaries.html',context)
-# def core(request):
-#     core = Core.objects.all()
-#     context = {
-#         'core': core,
-#         'header': 'Core',
-#     }
-#     return render(request,'members/core.html',context)
-#
-# def exec(request):
-#     exec = Executive.objects.all()
-#     context = {
-#         'exec': exec,
-#         'header': 'Executives',
-#     }
-#     return render(request,'members/exec.html',context)
-
-
-# for the gallery in members -- /members/gallery/
-def gallery(request):
-    return HttpResponse('You are in gallery')
