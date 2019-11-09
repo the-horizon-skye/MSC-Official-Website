@@ -1117,7 +1117,10 @@ h3 {
     background-repeat: no-repeat;
     padding-top: 300px;
     padding-bottom: 100px;
+	overflow: hidden;
+  
 }
+
 
 @media (max-width: 767px) {
 
@@ -1328,107 +1331,51 @@ h3 {
     }
 }
 
-/* line 121, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .single_date {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
+.slider_area .svg-wrapper {
+  height: 60px;
+	margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
 }
 
-@media (max-width: 767px) {
-
-    /* line 121, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-    .slider_area .single_date {
-        margin-bottom: 15px;
-    }
+.slider_area  .shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #19f6e8;
 }
 
-/* line 128, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .single_date i {
-    padding-right: 10px;
+.slider_area  .title_text {
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
 }
 
-/* line 135, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .countDOwn_area {
-    padding-top: 60px;
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
 }
 
-/* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .countdown_time {
-    text-align: right;
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-
-    /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-    .slider_area .countdown_time {
-        margin-top: 40px;
-        text-align: left;
-    }
-}
-
-@media (max-width: 767px) {
-
-    /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-    .slider_area .countdown_time {
-        text-align: left;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-
-    /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-    .slider_area .countdown_time {
-        text-align: left;
-    }
-}
-
-/* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .countdown_time .single_countdown {
-    display: inline-block;
-    text-align: right;
-    margin-right: 20px;
-}
-
-@media (max-width: 767px) {
-
-    /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-    .slider_area .countdown_time .single_countdown {
-        margin-right: 10px;
-        margin-top: 20px;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-
-    /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-    .slider_area .countdown_time .single_countdown {
-        margin-right: 10px;
-        margin-top: 20px;
-    }
-}
-
-/* line 162, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .countdown_time .single_countdown h3 {
-    color: #fff;
-    font-size: 46px;
-    font-weight: 600;
-}
-
-@media (max-width: 767px) {
-
-    /* line 162, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-    .slider_area .countdown_time .single_countdown h3 {
-        font-size: 20px;
-    }
-}
-
-/* line 170, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .countdown_time .single_countdown span {
-    font-size: 16px;
-    color: #fff;
-    text-transform: capitalize;
-}
 
 /* line 178, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .opcity_text {
@@ -1761,7 +1708,12 @@ h3 {
 .speakers_area {
     padding-top: 100px;
     position: relative;
+	
+  padding-top: 5em;
+	display: flex;
+  justify-content: center;
 }
+
 
 /* line 5, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
 .speakers_area.inc_padd {
@@ -1811,6 +1763,62 @@ h3 {
     .speakers_area .horizontal_text {
         font-size: 90px;
     }
+}
+
+
+.speakers_area .serction_title_large  h3 {
+  color: #000;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+.contact-section {
+   
+  padding-top: 5em;
+	display: flex;
+  justify-content: center;
+}
+.contact-section .serction_title_large  h3 {
+  color: #000;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
 
 /* line 31, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
@@ -1918,6 +1926,8 @@ h3 {
     -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_resister.scss */
 .resister_bg_1 {
