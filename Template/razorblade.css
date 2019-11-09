@@ -1,0 +1,47 @@
+<style>
+body{
+	margin:0;
+}
+.slantedDiva{
+	position:relative;
+	width:100%;
+	height:400px;
+	background: #f2ae30;
+}
+.slantedDiva:after
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background: inherit;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left:0;
+	z-index:-1;
+	transform-origin: top left;
+	transform: skewY(4deg);
+}
+
+.slantedDiva1{
+	position:relative;
+	width:100%;
+	height:400px;
+	background: #aff2f0;
+}
+.slantedDiva1:after
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background: inherit;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left:0;
+	z-index:-1;
+	transform-origin: top right;
+	transform: skewY(-4deg);
+}
