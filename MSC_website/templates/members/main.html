@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block css %}
+{% endblock %}
+{% block body %}
+    <div class="slider_area slider_bg_1">
+        <div class="slider_text">
+            <div class="container">
+                <div class="position_relv">
+                    <h1 class="opcity_text d-none d-lg-block">CONFIRENCE</h1>
+                    <div class="row">
+                        <div class="col-xl-9">
+                            <div class="title_text">
+                                <h3>Members <br>
+                                </h3>
+                                <a href="#" class="boxed-btn-white">Add to your Calendar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="speakers_area">
+        <h3><br></h3>
+        <div class="container">
+            <h1>SECRETARIES</h1>
+
+            <div class="row">
+                {% for s in sec %}
+                <div class="col-md-3">
+                    <div class="single_speaker">
+                        <div class="speaker_thumb">
+                            <img src="{{s.photourl}}" alt="">
+                        </div>
+                        <div class="speaker_name text-center">
+                            <h3>{{s.name}}</h3>
+                            <p>{{s.designation}}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+    <div class="speakers_area">
+        <h3><br></h3>
+        <div class="container">
+            <h1>CORE</h1>
+
+            <div class="row">
+                {% for c in core %}
+                <div class="col-md-3">
+                    <div class="single_speaker">
+                        <div class="speaker_thumb">
+                            <img src="{{c.photourl}}" alt="">
+                        </div>
+                        <div class="speaker_name text-center">
+                            <h3>{{c.name}}</h3>
+                            <p>{{c.designation}}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="speakers_area">
+        <h3><br></h3>
+        <div class="container">
+            <h1>EXECUTIVE</h1>
+
+            <div class="row">
+                {% for e in exec %}
+                <div class="col-md-3">
+                    <div class="single_speaker">
+                        <div class="speaker_thumb">
+                            <img src="{{e.photourl}}" alt="">
+                        </div>
+                        <div class="speaker_name text-center">
+                            <h3>{{e.name}}</h3>
+                            <p>{{e.designation}}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    {% block endjs %}
+    {% endblock %}
+
+{% endblock %}
+
