@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,700i,800,800i,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,700i,800,800i,900&display=swap");
-
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_extend.scss */
 .flex-center-start {
     display: -webkit-box;
@@ -564,7 +564,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
-    font-family: "Poppins", sans-serif;
+    font-family: "Merriweather", sans-serif;
     margin-bottom: 22px;
 }
 
@@ -583,7 +583,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-family: "Merriweather", sans-serif;
     margin-bottom: 22px;
 }
 
@@ -915,12 +915,12 @@ h3 {
 
 /* line 43, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a {
-    color: #c3e342;
+    color: #799486;
     font-size: 16px;
     font-weight: 600;
     display: inline-block;
     padding: 35px 23px 35px 23px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Merriweather", sans-serif;
     position: relative;
     text-transform: capitalize;
 }
@@ -964,12 +964,12 @@ h3 {
 
 /* line 92, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a:hover {
-    color: pink;
+    color: #52f2d5;
 }
 
 /* line 95, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a.active {
-    color: #c3e342;
+    color: #52f2d5;
 }
 
 /* line 99, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
@@ -1491,7 +1491,7 @@ h3 {
 
 /* line 52, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
 .about_area .about_thumb .exprience span {
-    font-family: "Poppins", sans-serif;
+    font-family: "Merriweather", sans-serif;
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
