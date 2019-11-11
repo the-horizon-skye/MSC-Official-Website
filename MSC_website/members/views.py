@@ -10,7 +10,6 @@ def home(request):
     sec = Secretaries.objects.all()
     core = Core.objects.all()
     exec = Executive.objects.all()
-    gal = gallery.objects.all()
     context = {
         'sec': sec,
         'header': 'Secretaries',
@@ -18,7 +17,12 @@ def home(request):
         'header': 'Core',
         'exec': exec,
         'header': 'Executives',
+    }
+    return render(request, 'members/main.html',context)
+def gallery(request):
+    gal = gallery.objects.all()
+    context = {
         'gal': gal,
         'header': 'Gallery',
     }
-    return render(request, 'members/main.html',context)
+    return HttpResponse("Hello World")
