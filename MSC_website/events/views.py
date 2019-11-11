@@ -7,7 +7,7 @@ from .forms import Register
 
 #for the main events page -- /events/
 def home(request):
-    return HttpResponse('You are in Events page')
+    return render(request,'events/home.html')
 
 
 # for the registeration page -- /events/register/
@@ -37,6 +37,7 @@ def register(request):
                 )
                 user.name = form.cleaned_data['name']
                 user.branch = form.cleaned_data['branch']
+                user.year = form.cleaned_data['year']
                 user.college = form.cleaned_data['college']
                 user.save()
                 # redirect to successful registration page

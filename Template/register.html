@@ -142,13 +142,19 @@
     <!-- slider_area_end -->
 
     <!-- ================ contact section start ================= -->
-    <section class="contact-section">
+    <section class="contact-section" style="background: #d1f7f5;">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-lg-2"></div>
+          <div
+            class="col-lg-8"
+            style="background: #f3f5f5; padding-top:4vh; opacity: 0.75; margin-bottom: 0px;"
+          >
             <h2 class="contact-title">Register Now!</h2>
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8" style="background: #f3f5f5; opacity: 0.75">
             <form
               class="form-contact contact_form"
               action="contact_process.php"
@@ -195,7 +201,7 @@
                   </div>
                 </div>
                 <div class="col-sm-12">
-                  <h5>Roll No.:</h5>
+                  <h5>Roll No:</h5>
                 </div>
                 <div class="col-sm-9">
                   <div class="form-group">
@@ -207,6 +213,22 @@
                       onfocus="this.placeholder = ''"
                       onblur="this.placeholder = 'Enter Roll Number'"
                       placeholder="Enter Roll Number"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <h5>Branch:</h5>
+                </div>
+                <div class="col-sm-9">
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      name="branch"
+                      id="branch"
+                      type="text"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Enter Branch'"
+                      placeholder="Enter Branch"
                     />
                   </div>
                 </div>
@@ -240,6 +262,32 @@
                       onblur="this.placeholder = 'Enter College Name'"
                       placeholder="Enter College Name"
                     />
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <h5>Select Events You want to register for:</h5>
+                </div>
+                <div class="col-sm-5">
+                  <div class="switch-wrap d-flex justify-content-between">
+                    <p style="color: black;"><strong>Event-1</strong></p>
+                    <div class="confirm-checkbox" style="border: solid;">
+                      <input type="checkbox" id="event1" />
+                      <label for="event1"></label>
+                    </div>
+                  </div>
+                  <div class="switch-wrap d-flex justify-content-between">
+                    <p style="color: black;"><strong>Event-2</strong></p>
+                    <div class="confirm-checkbox" style="border:solid;">
+                      <input type="checkbox" id="event2" />
+                      <label for="event2"></label>
+                    </div>
+                  </div>
+                  <div class="switch-wrap d-flex justify-content-between">
+                    <p style="color: black;"><strong>Event-3</strong></p>
+                    <div class="confirm-checkbox" style="border: solid;">
+                      <input type="checkbox" id="event3" />
+                      <label for="event3"></label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -331,29 +379,7 @@
     <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.js"></script>
-    <script src="js/plugins.js"></script>
-
     <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
 
     <script src="js/main.js"></script>
   </body>

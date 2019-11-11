@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,700i,800,800i,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,700i,800,800i,900&display=swap");
-
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_extend.scss */
 .flex-center-start {
     display: -webkit-box;
@@ -564,7 +564,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
-    font-family: "Poppins", sans-serif;
+    font-family: "Merriweather", sans-serif;
     margin-bottom: 22px;
 }
 
@@ -583,7 +583,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-family: "Merriweather", sans-serif;
     margin-bottom: 22px;
 }
 
@@ -915,12 +915,12 @@ h3 {
 
 /* line 43, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a {
-    color: #c3e342;
+    color: #799486;
     font-size: 16px;
     font-weight: 600;
     display: inline-block;
     padding: 35px 23px 35px 23px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Merriweather", sans-serif;
     position: relative;
     text-transform: capitalize;
 }
@@ -964,12 +964,12 @@ h3 {
 
 /* line 92, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a:hover {
-    color: pink;
+    color: #52f2d5;
 }
 
 /* line 95, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a.active {
-    color: #c3e342;
+    color: #52f2d5;
 }
 
 /* line 99, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
@@ -1333,10 +1333,69 @@ h3 {
     color: #fff;
     font-size: 20px;
     font-weight: 600;
+<<<<<<< HEAD
+=======
 }
 
 @media (max-width: 767px) {
 
+    /* line 121, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+    .slider_area .single_date {
+        margin-bottom: 15px;
+    }
+}
+
+/* line 128, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+.slider_area .single_date i {
+    padding-right: 10px;
+}
+
+/* line 135, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+.slider_area .countDOwn_area {
+    padding-top: 60px;
+}
+
+/* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+.slider_area .countdown_time {
+    text-align: right;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+    .slider_area .countdown_time {
+        margin-top: 40px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+    .slider_area .countdown_time {
+        text-align: left;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+    .slider_area .countdown_time {
+        text-align: left;
+    }
+}
+
+/* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+.slider_area .countdown_time .single_countdown {
+    display: inline-block;
+    text-align: right;
+    margin-right: 20px;
+>>>>>>> parent of a8a56d4... worked on svg and index page
+}
+
+@media (max-width: 767px) {
+
+<<<<<<< HEAD
     /* line 121, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
     .slider_area .single_date {
         margin-bottom: 15px;
@@ -1423,6 +1482,39 @@ h3 {
     }
 }
 
+=======
+    /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+    .slider_area .countdown_time .single_countdown {
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+    .slider_area .countdown_time .single_countdown {
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+}
+
+/* line 162, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+.slider_area .countdown_time .single_countdown h3 {
+    color: #fff;
+    font-size: 46px;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+
+    /* line 162, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+    .slider_area .countdown_time .single_countdown h3 {
+        font-size: 20px;
+    }
+}
+
+>>>>>>> parent of a8a56d4... worked on svg and index page
 /* line 170, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_area .countdown_time .single_countdown span {
     font-size: 16px;
@@ -1544,7 +1636,7 @@ h3 {
 
 /* line 52, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
 .about_area .about_thumb .exprience span {
-    font-family: "Poppins", sans-serif;
+    font-family: "Merriweather", sans-serif;
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
