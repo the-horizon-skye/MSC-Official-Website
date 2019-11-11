@@ -3,5 +3,5 @@ from . import views
 app_name = "members"
 urlpatterns = [
     path('',views.home,name = 'home'),
-path('gallery/',views.gallery,name = 'gallery'),
+    path('gallery/',views.gallery,name = 'gallery'),
 ]

@@ -20,9 +20,9 @@ def home(request):
     }
     return render(request, 'members/main.html',context)
 def gallery(request):
-    gal = gallery.objects.all()
+    gall = gallery.objects.all()
     context = {
-        'gal': gal,
-        'header': 'Gallery',
+        'gall' : gall,
+        'header' : 'Gallery',
     }
-    return HttpResponse("Hello World")
+    return render(request, 'members/gallery.html', context)
