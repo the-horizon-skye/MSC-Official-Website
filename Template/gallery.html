@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/pagination.css">
 
 
 
@@ -129,6 +130,18 @@
         </div>
 
     </div>
+    <div class="container">
+        <br>
+        <ul class="pagination modal-1">
+            <li><a href="#" class="prev">&laquo</a></li>
+            <li> <a href="#">1</a></li>
+            <li> <a href="#">2</a></li>
+            <li><a href="#" class="active">3</a></li>
+            <li> <a href="#">5</a></li>
+            <li> <a href="#">6</a></li>
+            <li><a href="#" class="next">&raquo;</a></li>
+        </ul>
+    </div>
     <!-- footer_start -->
 
     <footer class="footer footer_bg_1">
@@ -199,6 +212,12 @@
 
     <!--contact js-->
     <script src="js/main.js"></script>
+    <script src="js/pagination.js"></script>
+    <script>
+          $('.pagination .modal-1 li').on('click',(e)=>{
+      console.log("clicked")
+    })
+    </script>
 
 
 
