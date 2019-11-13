@@ -1336,8 +1336,6 @@ h3 {
     color: #fff;
     font-size: 20px;
     font-weight: 600;
-<<<<<<< HEAD
-=======
 }
 
 @media (max-width: 767px) {
@@ -1393,12 +1391,10 @@ h3 {
     display: inline-block;
     text-align: right;
     margin-right: 20px;
->>>>>>> parent of a8a56d4... worked on svg and index page
 }
 
 @media (max-width: 767px) {
 
-<<<<<<< HEAD
     /* line 121, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
     .slider_area .single_date {
         margin-bottom: 15px;
@@ -1517,7 +1513,7 @@ h3 {
     }
 }
 
->>>>>>> parent of a8a56d4... worked on svg and index page
+
 /* line 170, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_area .countdown_time .single_countdown span {
     font-size: 16px;

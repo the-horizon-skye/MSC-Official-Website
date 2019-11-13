@@ -21,13 +21,8 @@ body{
 	bottom: 0;
 	left:0;
 	z-index:-1;
-<<<<<<< Updated upstream
-	/*border-radius: 25px;*/
+/*border-radius: 25px;*/
 	
-=======
-	
-	transform: skewY(-4deg);
->>>>>>> Stashed changes
 
 }
 
@@ -137,16 +132,14 @@ body{
 
 }
 
-<<<<<<< Updated upstream
 /* Second sheet of paper */
 .paper1::before {
   left: 7px;
   top: 5px;
   z-index: -1;
   /*border-radius: 25px;*/
-	
-=======
 /* Diagonal stacked paper effect */
+}
 .paper {
   background-color: #f6c770;
   /* Need position to allow stacking of pseudo-elements */
@@ -160,7 +153,7 @@ body{
 .paper::after {
   /* Add shadow to distinguish sheets from one another */
   box-shadow: 2px 1px 1px rgba(0,0,0,0.15);
-		transform: skewY(-4deg);
+	
 
 }
 
@@ -171,7 +164,6 @@ body{
   width: 100%;
   height: 100%;
   background-color: #fbe6c0;
-  	transform: skewY(-4deg);
 
 }
 
@@ -180,24 +172,19 @@ body{
   left: 7px;
   top: 5px;
   z-index: -1;
-	transform: skewY(-4deg);
->>>>>>> Stashed changes
 
 }
 
 /* Third sheet of paper */
-<<<<<<< Updated upstream
 .paper1::after {
   left: 12px;
   top: 10px;
   z-index: -2;
-/*border-radius: 25px;*/
-=======
+/*border-radius: 25px;*/}
 .paper::after {
   left: 12px;
   top: 10px;
   z-index: -2;
-	transform: skewY(-4deg);
->>>>>>> Stashed changes
+	
 
 }
