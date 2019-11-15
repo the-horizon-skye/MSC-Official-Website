@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.core.paginator import Paginator
 from django.http import HttpResponse,HttpResponseRedirect
 from .models import *
 
@@ -19,10 +20,13 @@ def home(request):
         'header': 'Executives',
     }
     return render(request, 'members/main.html',context)
-def gallery(request):
-    gall = gallery.objects.all()
+def gall(request):
+    gal = gallery.objects.all()
+    paginator = Paginator(gal, 20)
+    page = request.GET.get('page')
+    gal = paginator.get_page(page)
     context = {
-        'gall' : gall,
-        'header' : 'Gallery',
+        'gal': gal,
+        'header': 'Gallery',
     }
-    return render(request, 'members/gallery.html', context)
+    return render(request, 'members/gallery.html',context)

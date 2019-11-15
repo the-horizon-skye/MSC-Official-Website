@@ -12,6 +12,5 @@ class Core(Members):
     pass
 class Executive(Members):
     pass
-
 class gallery(models.Model):
     picurl = models.CharField(max_length=300)
