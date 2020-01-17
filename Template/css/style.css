@@ -529,7 +529,7 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 			position:absolute;
 			top:-48px;
 			left:0px;
-			background:#ffeb3b;
+			background:#262626;
 			transform:skewY(7deg);
 			}
 			.sec2:after{
@@ -539,7 +539,7 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 			position:absolute;
 			top:-48px;
 			right:0px;
-			background:#ffeb3b;
+			background:#262626;
 			transform:skewY(-7deg);
 			}
 			.sec3{
