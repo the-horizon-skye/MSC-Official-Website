@@ -567,9 +567,16 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 			padding: 150px 200px;
 			transform: skew(0deg,-2deg);
 			}
-		
+		@media only screen and (max-width: 600px) {
+			.container3{
+				padding:0;
+				height: 700px;
+			}
+
+		}
 			
-/* line 15, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
+/* line 15, C:/U
+ers/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
 .img {
     max-width: 100%;
     -webkit-transition: 0.3s;
@@ -2459,7 +2466,7 @@ h3 {
 }
 
 /* line 50, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
-#spid .bg .speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon {
+#pid .bg .speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon {
     position: absolute;
     left: 0;
     right: 0;
