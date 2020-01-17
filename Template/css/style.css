@@ -556,7 +556,7 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 			}
 			.container2{
 			padding: 150px 200px;
-			transform: skew(0deg,2deg);
+			transform: skew(0deg,0deg);
 			}
 			.sec5{
 			background:#262626;
@@ -565,7 +565,7 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 			}
 			.container3{
 			padding: 150px 200px;
-			transform: skew(0deg,0deg);
+			transform: skew(0deg,-2deg);
 			}
 		
 			
