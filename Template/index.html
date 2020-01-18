@@ -40,18 +40,29 @@
                         <div class="row">
                             <div class="col-12">
                                 <nav class="navbar navbar-expand-md navbar-light">
-                                    <div class="col-xl-2 col-lg-2">
-                                        <div class="logo-img">
-                                            <a href="index.html">
-                                                <img src="img/LogoM.png" alt="MSC_LOGO" style="max-width: 10.666vh;">
-                                            </a>
-                                            <div style="margin-left: 9.2444vh;margin-top: -8.0888vh;font-size: 1.6vh;color: #212121">Microsoft <br>Student<br>Chapter</div>
+                                    
+                                    
+                                   
+                                        <!-- <div class="col-xs-9 col-sm-9"></div> -->
+                                        <div class="container" style="display: flex; flex-direction: row; justify-content: space-between; align-content: space-between;">
+                                            <div>
+                                                <div class="logo-img" >
+                                                    <a href="index.html">
+                                                        <img src="img/LogoM.png" alt="MSC_LOGO" style="max-width: 10.666vh;">
+                                                    </a>
+                                                    <div style="margin-left: 9.2444vh;margin-top: -8.0888vh;font-size: 1.6vh;color: #212121">Microsoft
+                                                        <br>Student<br>Chapter</div>
+                                                </div>
+                                            </div>
+                                            <div style="align-self: center;">
+                                            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
                                         </div>
-                                    </div>
-
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
+                                        </div>
+                                    
+                                    
 
                                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul class="navbar-nav ml-auto py-4 py-md-0">
@@ -246,7 +257,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xl-3 col-md-6 my-2">
+                            <div class="col-xl-3 col-lg-3 col-md-6 my-2">
                                 <div class="single_speaker">
                                     <div class="speaker_thumb">
                                         <img src="img/speakers/1.png" alt="">
@@ -264,7 +275,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-md-6 my-2">
+                            <div class="col-xl-3 col-lg-3 col-md-6 my-2">
                                 <div class="single_speaker">
                                     <div class="speaker_thumb">
                                         <img src="img/speakers/3.png"  alt="">
@@ -282,7 +293,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-md-6 my-2">
+                            <div class="col-xl-3 col-md-6 col-lg-3 my-2">
                                 <div class="single_speaker">
                                     <div class="speaker_thumb">
                                         <img src="img/speakers/2.png" alt="">
@@ -300,7 +311,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-md-6 my-2">
+                            <div class="col-xl-3 col-md-6 col-lg-3 my-2">
                                 <div class="single_speaker">
                                     <div class="speaker_thumb">
                                         <img src="img/speakers/1.png" alt="">
@@ -411,7 +422,7 @@
                                     Venue
                                 </h3>
                                 <p style="color: #272727;text-align: left;">
-                                    Thapar Institute of Engineering and Technology, Patiala, Punjab 147001 <br>
+                                    Thapar Institute of Engineering and Technology,<br> Patiala, Punjab 147001 <br>
                                     msc@thapar.edu <br>
                                     +91 87270 95665
 
@@ -452,6 +463,7 @@
             function scrollFunction() {
                 if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
                     document.getElementById("nav-bakwass").style.background = "#f3f3f3";
+
                 }
             }
 
@@ -459,6 +471,7 @@
         <!-- JS here -->
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        
         <!--contact js-->
 
         <script src="js/main.js"></script>
