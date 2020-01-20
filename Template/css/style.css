@@ -1840,7 +1840,6 @@ h3 {
 /* line 72, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_area .title_text::before {
     position: absolute;
-    background-image: url(../img/banner/path.png);
     content: "";
     background-repeat: no-repeat;
     background-size: contain;
