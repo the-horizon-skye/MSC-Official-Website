@@ -2564,11 +2564,12 @@ h3 {
     display: inline-block;
     line-height: 50px;
     font-size: 25px;
-    color: #f5c3bc;
+    color: #e87463;
     margin: 0 7px;
 }
 .speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon a:hover{
 	background:#f5c3bc;
+	color: #c7331e;
 }
 .speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon{
 
@@ -2588,9 +2589,7 @@ h3 {
 	margin: 12px;
 }
 /* line 70, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
-.speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon a:hover {
-    color: #8f093a;
-}
+
 
 
 
