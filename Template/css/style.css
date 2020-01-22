@@ -424,7 +424,9 @@ h1 span:nth-child(15) {
     visibility: hidden;
     opacity: 0;
     max-height: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    
     padding: 0;
     margin: 0;
     transition: all 200ms linear;
@@ -433,7 +435,7 @@ h1 span:nth-child(15) {
 .nav-item.show .dropdown-menu {
     opacity: 1;
     visibility: visible;
-    max-height: 999px;
+    max-height: 60vh;
     transform: translate3d(0, 0px, 0);
 }
 
@@ -455,7 +457,12 @@ h1 span:nth-child(15) {
 }
 
 .dropdown-item {
-    padding: 3px 15px;
+    padding: 5px;
+    margin: 0;
+    max-height: 2vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
     color: #212121;
     border-radius: 2px;
     transition: all 200ms linear;
@@ -557,7 +564,7 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
     .dropdown-toggle::after {
         position: absolute;
-        display: block;
+        display: flex;
         top: 10px;
         left: -23px;
         width: 1px;
@@ -1436,6 +1443,7 @@ h3 {
     .header-area .main-header-area .logo-img {
         padding-left: 20px;
     }
+    
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1444,6 +1452,7 @@ h3 {
     .header-area .main-header-area .logo-img img {
         width: 100px;
     }
+    
 }
 
 @media (max-width: 767px) {
@@ -1452,6 +1461,7 @@ h3 {
     .header-area .main-header-area .logo-img img {
         width: 120px;
     }
+    
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1460,6 +1470,7 @@ h3 {
     .header-area .main-header-area .logo-img img {
         width: 120px;
     }
+    
 }
 
 /* line 36, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
