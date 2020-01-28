@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,700i,800,800i,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,700i,800,800i,900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_extend.scss */
 .flex-center-start {
@@ -14,56 +15,574 @@
     justify-content: start;
 }
 
-/* line 12, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_extend.scss */
-.speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon a:hover {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9600+0,fe531e+26,c022a5+57,1bb8f9+100 */
-    background: #ff9600;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9600', endColorstr='#1bb8f9', GradientType=0);
-    /* IE6-9 */
-}
-
-/* line 23, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_extend.scss */
-.event_area .double_line::before,
-.event_area .double_line::after {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9600+0,fe531e+26,c022a5+57,1bb8f9+100 */
-    background: #ff9600;
-    /* Old browsers */
-    background: -moz-linear-gradient(left, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #ff9600 0%, #fe531e 26%, #c022a5 57%, #1bb8f9 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9600', endColorstr='#1bb8f9', GradientType=1);
-    /* IE6-9 */
-}
-
-/* Normal desktop :1200px. */
-/* Normal desktop :992px. */
-/* Tablet desktop :768px. */
-/* small mobile :320px. */
-/* Large Mobile :480px. */
-/* 1. Theme default css */
-/* Normal desktop :1200px. */
-/* Normal desktop :992px. */
-/* Tablet desktop :768px. */
-/* small mobile :320px. */
-/* Large Mobile :480px. */
-/* line 6, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
 body {
     font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-style: normal;
+    margin: 0;
+    padding: 0;
+    background: #f3f3f3;
 }
 
-/* line 15, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+
+/* #Navigation
+================================================== */
+
+.start-header {
+    opacity: 1;
+    transform: translateY(0);
+    padding: 10px 0;
+    box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    font-family: 'Dancing Script';
+    color: #000000;
+
+}
+
+.start-header.scroll-on {
+    box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+    padding: 5px 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.start-header.scroll-on .navbar-brand img {
+    height: 28px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar {
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
+}
+
+.navbar-brand img {
+    height: 80px;
+    width: auto;
+    display: block;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar-toggler {
+    float: right;
+    border: none;
+    padding-right: 0;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+    width: 24px;
+    height: 17px;
+    background-image: none;
+    position: relative;
+    border-bottom: 1px solid #000;
+    transition: all 300ms linear;
+}
+
+.navbar-light .navbar-toggler-icon:after,
+.navbar-light .navbar-toggler-icon:before {
+    width: 24px;
+    position: absolute;
+    height: 1px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: 2;
+    transition: all 300ms linear;
+}
+
+.navbar-light .navbar-toggler-icon:after {
+    top: 8px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    transform: translateY(8px) rotate(-45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    border-color: transparent;
+}
+
+.nav-link {
+    color: #f9fcfb !important;
+    font-weight: 500;
+    transition: all 200ms linear;
+}
+
+.nav-item:hover .nav-link {
+    color: #FFFFFF !important;
+}
+
+.nav-item.active .nav-link {
+    color: #777 !important;
+}
+
+.nav-link {
+    position: relative;
+    padding: 5px 0 !important;
+    display: inline-block;
+}
+
+.nav-item:after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background-color: #FFFFFF;
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.nav-item:hover:after {
+    bottom: 0;
+    opacity: 1;
+}
+
+.nav-item.active:hover:after {
+    opacity: 0;
+}
+
+.nav-item {
+    position: relative;
+    transition: all 200ms linear;
+}
+
+/* #Primary style
+================================================== */
+
+.bg-light {
+    background-color: #fff !important;
+    transition: all 200ms linear;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.over-hide {
+    overflow: hidden;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: 40px;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #212112;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    opacity: 1;
+    transform: translate(0);
+    transition: all 300ms linear;
+    transition-delay: 1700ms;
+}
+
+body.hero-anime p {
+    opacity: 0;
+    transform: translateY(40px);
+    transition-delay: 1700ms;
+}
+
+h1 span {
+    display: inline-block;
+    transition: all 300ms linear;
+    opacity: 1;
+    transform: translate(0);
+}
+
+.hero-anime h1 span:nth-child(1) {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.hero-anime h1 span:nth-child(2) {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.hero-anime h1 span:nth-child(3) {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.hero-anime h1 span:nth-child(4) {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.hero-anime h1 span:nth-child(5) {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.hero-anime h1 span:nth-child(6) {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.hero-anime h1 span:nth-child(7) {
+    opacity: 0;
+    transform: translateY(-40px);
+}
+
+.hero-anime h1 span:nth-child(8) {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.hero-anime h1 span:nth-child(9) {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.hero-anime h1 span:nth-child(10) {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+h1 span:nth-child(1) {
+    transition-delay: 1000ms;
+}
+
+h1 span:nth-child(2) {
+    transition-delay: 700ms;
+}
+
+h1 span:nth-child(3) {
+    transition-delay: 900ms;
+}
+
+h1 span:nth-child(4) {
+    transition-delay: 800ms;
+}
+
+h1 span:nth-child(5) {
+    transition-delay: 1000ms;
+}
+
+h1 span:nth-child(6) {
+    transition-delay: 700ms;
+}
+
+h1 span:nth-child(7) {
+    transition-delay: 900ms;
+}
+
+h1 span:nth-child(8) {
+    transition-delay: 800ms;
+}
+
+h1 span:nth-child(9) {
+    transition-delay: 600ms;
+}
+
+h1 span:nth-child(10) {
+    transition-delay: 700ms;
+}
+
+.hero-anime h1 span:nth-child(11) {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero-anime h1 span:nth-child(12) {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.hero-anime h1 span:nth-child(13) {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.hero-anime h1 span:nth-child(14) {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero-anime h1 span:nth-child(15) {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+h1 span:nth-child(11) {
+    transition-delay: 1300ms;
+}
+
+h1 span:nth-child(12) {
+    transition-delay: 1500ms;
+}
+
+h1 span:nth-child(13) {
+    transition-delay: 1400ms;
+}
+
+h1 span:nth-child(14) {
+    transition-delay: 1200ms;
+}
+
+h1 span:nth-child(15) {
+    transition-delay: 1450ms;
+}
+
+.nav-item .dropdown-menu {
+    transform: translate3d(0, 10px, 0);
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+    transition: all 200ms linear;
+}
+
+.nav-item.show .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    max-height: 60vh;
+    transform: translate3d(0, 0px, 0);
+}
+
+.dropdown-menu {
+    padding: 10px !important;
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #212121;
+    background-color: #fcfaff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px 0 #f0efef;
+    transition: all 200ms linear;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-item {
+    padding: 5px;
+    margin: 0;
+    max-height: 2vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #212121;
+    border-radius: 2px;
+    transition: all 200ms linear;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #fff;
+    background-color: #f5c3bc;
+}
+
+body.dark {
+    color: #fff;
+    background-color: #1f2029;
+}
+
+body.dark h1 {
+    color: #fff;
+}
+
+body.dark h1 span {
+    transition-delay: 0ms !important;
+}
+
+body.dark p {
+    color: #fff;
+    transition-delay: 0ms !important;
+}
+
+body.dark .bg-light {
+    background-color: #14151a !important;
+}
+
+body.dark .start-header {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+}
+
+body.dark .start-header.scroll-on {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+body.dark .nav-link {
+    color: #fff !important;
+}
+
+body.dark .nav-item.active .nav-link {
+    color: #999 !important;
+}
+
+body.dark .dropdown-menu {
+    color: #fff;
+    background-color: #1f2029;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+body.dark .dropdown-item {
+    color: #fff;
+}
+
+body.dark .navbar-light .navbar-toggler-icon {
+    border-bottom: 1px solid #fff;
+}
+
+body.dark .navbar-light .navbar-toggler-icon:after,
+body.dark .navbar-light .navbar-toggler-icon:before {
+    background-color: #fff;
+}
+
+body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    border-color: transparent;
+}
+
+
+
+/* #Media
+================================================== */
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    .nav-item:after {
+        display: none;
+    }
+
+    .nav-item::before {
+        position: absolute;
+        display: block;
+        top: 15px;
+        left: 0;
+        width: 11px;
+        height: 1px;
+        content: "";
+        border: none;
+        background-color: #000;
+        vertical-align: 0;
+    }
+
+    .dropdown-toggle::after {
+        position: absolute;
+        display: flex;
+        top: 10px;
+        left: -23px;
+        width: 1px;
+        height: 11px;
+        content: "";
+        border: none;
+        background-color: #000;
+        vertical-align: 0;
+        transition: all 200ms linear;
+    }
+
+    .dropdown-toggle[aria-expanded="true"]::after {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+
+    .dropdown-menu {
+        padding: 0 !important;
+        background-color: transparent;
+        box-shadow: none;
+        transition: all 200ms linear;
+    }
+
+    .dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    body.dark .nav-item::before {
+        background-color: #fff;
+    }
+
+    body.dark .dropdown-toggle::after {
+        background-color: #fff;
+    }
+
+    body.dark .dropdown-menu {
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+.sec3 {
+    background: #272727;
+}
+
+.sec4 {
+    background: #f3f3f3;
+}
+
+.sec5 {
+    background: #272727;
+    padding: 100px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container3 {
+        padding: 0;
+        height: 700px;
+    }
+
+}
+
+/* line 15, C:/U
+ers/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
 .img {
     max-width: 100%;
     -webkit-transition: 0.3s;
@@ -118,7 +637,7 @@ h3,
 h4,
 h5 {
     font-family: "Poppins", sans-serif;
-    color: #131313;
+    color: #808080;
 }
 
 /* line 48, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
@@ -151,6 +670,8 @@ p {
     margin-bottom: 13px;
     font-family: "Poppins", sans-serif;
 }
+
+
 
 /* line 73, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
 label {
@@ -235,19 +756,6 @@ h3 {
 }
 
 /* line 135, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
-.bg-img-1 {
-    background-image: url(../img/slider/slider-img-1.jpg);
-}
-
-/* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
-.bg-img-2 {
-    background-image: url(../img/background-img/bg-img-2.jpg);
-}
-
-/* line 141, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
-.cta-bg-1 {
-    background-image: url(../img/background-img/bg-img-3.jpg);
-}
 
 /* line 146, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
 .overlay {
@@ -564,7 +1072,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
-    font-family: "Poppins", sans-serif;
+    font-family: "Merriweather", sans-serif;
     margin-bottom: 22px;
 }
 
@@ -583,7 +1091,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    font-family: "Merriweather", sans-serif;
     margin-bottom: 22px;
 }
 
@@ -654,7 +1162,7 @@ h3 {
 
 /* line 57, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_section_title.scss */
 .serction_title_large h3 {
-    font-size: 80px;
+    font-size: 3.8em;
     font-weight: 700;
     color: #1F1F1F;
     display: inline-block;
@@ -692,7 +1200,6 @@ h3 {
     content: "";
     width: 128px;
     height: 4px;
-    background-image: url(../img/speakers/line.png);
     top: 50%;
     margin-bottom: 2px;
     right: -158px;
@@ -834,7 +1341,7 @@ h3 {
 
 /* line 6, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area {
-    padding: 0 150px;
+    padding: 0 80px;
 }
 
 @media (max-width: 767px) {
@@ -875,6 +1382,7 @@ h3 {
     .header-area .main-header-area .logo-img {
         padding-left: 20px;
     }
+
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -883,6 +1391,7 @@ h3 {
     .header-area .main-header-area .logo-img img {
         width: 100px;
     }
+
 }
 
 @media (max-width: 767px) {
@@ -891,6 +1400,7 @@ h3 {
     .header-area .main-header-area .logo-img img {
         width: 120px;
     }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -899,6 +1409,7 @@ h3 {
     .header-area .main-header-area .logo-img img {
         width: 120px;
     }
+
 }
 
 /* line 36, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
@@ -915,7 +1426,7 @@ h3 {
 
 /* line 43, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a {
-    color: #c3e342;
+    color: #5b5656;
     font-size: 16px;
     font-weight: 600;
     display: inline-block;
@@ -929,7 +1440,7 @@ h3 {
 
     /* line 43, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
     .header-area .main-header-area .main-menu ul li a {
-        padding: 35px 8px 35px 8px;
+        padding: 10px 8px 30px 8px;
     }
 }
 
@@ -937,7 +1448,7 @@ h3 {
 
     /* line 43, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
     .header-area .main-header-area .main-menu ul li a {
-        padding: 35px 8px 35px 8px;
+        padding: 10px 8px 30px 8px;
     }
 }
 
@@ -964,12 +1475,12 @@ h3 {
 
 /* line 92, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a:hover {
-    color: pink;
+    color: #5b5656;
 }
 
 /* line 95, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a.active {
-    color: #c3e342;
+    color: #52f2d5;
 }
 
 /* line 99, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
@@ -1044,7 +1555,7 @@ h3 {
     transition: transform 500ms ease, background 500ms ease;
     -webkit-transition: transform 500ms ease, background 500ms ease;
     box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
-    padding: 0 150px;
+    padding: 10px 100px;
 }
 
 @media (max-width: 767px) {
@@ -1067,7 +1578,7 @@ h3 {
 
     /* line 140, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
     .header-area .main-header-area.sticky {
-        padding: 0 50px;
+        padding: 10px 50px;
     }
 }
 
@@ -1075,13 +1586,13 @@ h3 {
 
     /* line 140, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
     .header-area .main-header-area.sticky {
-        padding: 0 50px;
+        padding: 10px 50px;
     }
 }
 
 /* line 166, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area.sticky .main-menu {
-    padding: 0;
+    padding: 10px;
 }
 
 /* line 172, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
@@ -1104,10 +1615,39 @@ h3 {
     }
 }
 
-/* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_bg_1 {
-    background-image: url(../img/banner/banner_1.png);
+#navigation .link-1 {
+    transition: 0.4s;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
+}
 
+#navigation .link-1:hover {
+    background-color: #ffffff;
+    color: #fcfaff;
+    padding: 2px 10px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#svg {
+    background: linear-gradient(-45deg, #f6f4e6, #f5eaea, #CFA29D, #f5c3bc, #5f6769);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
@@ -1115,8 +1655,8 @@ h3 {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    padding-top: 300px;
-    padding-bottom: 100px;
+    padding-top: 240px;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -1147,7 +1687,7 @@ h3 {
     position: relative;
     margin-bottom: 213px;
     z-index: 3;
-    padding: 55px 8px 12px 0px;
+    padding: 55px 8px 5px 0px;
 }
 
 @media (max-width: 767px) {
@@ -1197,7 +1737,6 @@ h3 {
 /* line 46, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_area .title_text.title_text2:after {
     position: absolute;
-    background-image: url(../img/banner/path2.png);
     content: "";
     background-repeat: no-repeat;
     background-size: contain;
@@ -1244,7 +1783,6 @@ h3 {
 /* line 72, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_area .title_text::before {
     position: absolute;
-    background-image: url(../img/banner/path.png);
     content: "";
     background-repeat: no-repeat;
     background-size: contain;
@@ -1294,7 +1832,7 @@ h3 {
     font-weight: 700;
     text-transform: capitalize;
     line-height: 100px;
-    color: #a9a8a0;
+    color: #3c4245;
     margin-bottom: 66px;
 }
 
@@ -1315,6 +1853,7 @@ h3 {
         font-size: 46px;
         line-height: 55px;
         margin-bottom: 30px;
+
     }
 }
 
@@ -1333,6 +1872,61 @@ h3 {
     color: #fff;
     font-size: 20px;
     font-weight: 600;
+}
+
+@media (max-width: 767px) {
+
+    /* line 121, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+    .slider_area .single_date {
+        margin-bottom: 15px;
+    }
+}
+
+/* line 128, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+.slider_area .single_date i {
+    padding-right: 10px;
+}
+
+/* line 135, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+.slider_area .countDOwn_area {
+    padding-top: 60px;
+}
+
+/* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+.slider_area .countdown_time {
+    text-align: right;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+    .slider_area .countdown_time {
+        margin-top: 40px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+    .slider_area .countdown_time {
+        text-align: left;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+    .slider_area .countdown_time {
+        text-align: left;
+    }
+}
+
+/* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+.slider_area .countdown_time .single_countdown {
+    display: inline-block;
+    text-align: right;
+    margin-right: 20px;
 }
 
 @media (max-width: 767px) {
@@ -1422,6 +2016,38 @@ h3 {
         font-size: 20px;
     }
 }
+
+/* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+.slider_area .countdown_time .single_countdown {
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+    .slider_area .countdown_time .single_countdown {
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+}
+
+/* line 162, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+.slider_area .countdown_time .single_countdown h3 {
+    color: #fff;
+    font-size: 46px;
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+
+    /* line 162, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
+    .slider_area .countdown_time .single_countdown h3 {
+        font-size: 20px;
+    }
+}
+
 
 /* line 170, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_area .countdown_time .single_countdown span {
@@ -1544,7 +2170,7 @@ h3 {
 
 /* line 52, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
 .about_area .about_thumb .exprience span {
-    font-family: "Poppins", sans-serif;
+    font-family: "Merriweather", sans-serif;
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
@@ -1707,9 +2333,7 @@ h3 {
 }
 
 /* line 161, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
-.youtube_bg {
-    background-image: url(../img/video/youtube_bg.png);
-}
+
 
 /* line 166, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
 .youtube_video_area .youtube_video {
@@ -1759,7 +2383,7 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
 .speakers_area {
-    padding-top: 100px;
+    padding-top: 0px;
     position: relative;
 }
 
@@ -1814,13 +2438,13 @@ h3 {
 }
 
 /* line 31, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
-.speakers_area .single_speaker {
+#spid .bg .speakers_area .single_speaker {
     margin-bottom: 90px;
     overflow: hidden;
 }
 
 /* line 34, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
-.speakers_area .single_speaker .speaker_thumb {
+#spid .bg .speakers_area .single_speaker .speaker_thumb {
     position: relative;
     overflow: hidden;
 }
@@ -1831,7 +2455,7 @@ h3 {
 }
 
 /* line 40, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
-.speakers_area .single_speaker .speaker_thumb .hover_overlay {
+#spid .bg .speakers_area .single_speaker .speaker_thumb .hover_overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1850,7 +2474,7 @@ h3 {
 }
 
 /* line 50, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
-.speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon {
+#pid .bg .speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon {
     position: absolute;
     left: 0;
     right: 0;
@@ -1860,12 +2484,13 @@ h3 {
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    top: 90%;
 }
 
 /* line 58, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
 .speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon a {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
@@ -1876,21 +2501,47 @@ h3 {
     background: #fff;
     display: inline-block;
     line-height: 50px;
-    font-size: 17px;
-    color: #FF0000;
+    font-size: 25px;
+    color: #e87463;
     margin: 0 7px;
 }
 
-/* line 70, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
 .speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon a:hover {
-    color: #fff;
+    background: #f5c3bc;
+    color: #c7331e;
 }
+
+.speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon {
+
+    margin: 5px 30px;
+}
+
+@media (max-width: 576px) {
+    .speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon {
+        margin: 5px 65px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1024px) {
+    .speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon {
+        margin: 5px 70px;
+    }
+}
+
+.speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon .fa {
+    margin: 12px;
+}
+
+/* line 70, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
+
+
+
 
 /* line 79, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_speakers.scss */
 .speakers_area .single_speaker .speaker_name h3 {
     font-size: 26px;
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 7px;
 }
 
@@ -1921,7 +2572,6 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_resister.scss */
 .resister_bg_1 {
-    background-image: url(../img/banner/resister.png);
 }
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_resister.scss */
@@ -2167,6 +2817,7 @@ h3 {
 .event_area {
     position: relative;
     padding-bottom: 120px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -2281,6 +2932,7 @@ h3 {
         margin-bottom: 30px;
     }
 }
+
 @media (min-width: 992px) {
 
     .event_area .date h3 {
@@ -2357,23 +3009,9 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
 .footer_bg_1 {
-    background-image: url(../img/banner/footer_bg_1.png);
-}
-
-/* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
-.footer {
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-/* line 10, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
-.footer .circle_ball {
-    position: absolute;
-    top: -124px;
-    left: 110px;
+    background: linear-gradient(-45deg, #f6f4e6, #f5eaea, #CFA29D, #f5c3bc, #5f6769);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 /* line 15, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
@@ -2411,7 +3049,7 @@ h3 {
 .footer .footer_top .footer_widget .footer_title {
     font-size: 22px;
     font-weight: 400;
-    color: #fff;
+    color: #333332;
     text-transform: capitalize;
     margin-bottom: 40px;
 }
@@ -2784,19 +3422,6 @@ h3 {
 }
 
 /* line 92, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_team.scss */
-.team_1 {
-    background-image: url(../img/team/team1.png);
-}
-
-/* line 95, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_team.scss */
-.team_2 {
-    background-image: url(../img/team/team2.png);
-}
-
-/* line 98, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_team.scss */
-.team_3 {
-    background-image: url(../img/team/team3.png);
-}
 
 /*=================== contact banner start ====================*/
 /* line 3, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_contact.scss */
@@ -2938,7 +3563,8 @@ h3 {
 
 /* line 133, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_contact.scss */
 .contact-section {
-    padding: 130px 0 100px;
+    padding: 0px 0px 2em 0px;
+    background: #f3f3f3
 }
 
 @media (max-width: 991px) {
@@ -3118,7 +3744,6 @@ h6 {
 
 /* line 188, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .genric-btn.arrow {
-    display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-align: center;
@@ -3272,28 +3897,28 @@ h6 {
 /* line 297, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .genric-btn.danger {
     color: #fff;
-    background: #f44a40;
+    background: #e87463;
     border: 1px solid transparent;
 }
 
 /* line 301, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .genric-btn.danger:hover {
-    color: #f44a40;
-    border: 1px solid #f44a40;
+    color: #e87463;
+    border: 1px solid #e87463;
     background: #fff;
 }
 
 /* line 307, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .genric-btn.danger-border {
-    color: #f44a40;
-    border: 1px solid #f44a40;
+    color: #e87463;
+    border: 1px solid #e87463;
     background: #fff;
 }
 
 /* line 311, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .genric-btn.danger-border:hover {
     color: #fff;
-    background: #f44a40;
+    background: #e87463;
     border: 1px solid transparent;
 }
 
@@ -3991,10 +4616,6 @@ h6 {
 }
 
 /* line 876, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
-.disabled-checkbox input:checked + label {
-    background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
-    border: none;
-}
 
 /* line 884, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .primary-radio {
@@ -4034,8 +4655,6 @@ h6 {
 
 /* line 913, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .primary-radio input:checked + label {
-    background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
-    border: none;
 }
 
 /* line 921, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
@@ -4076,8 +4695,6 @@ h6 {
 
 /* line 950, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .confirm-radio input:checked + label {
-    background: url(../img/elements/success-radio.png) no-repeat center center/cover;
-    border: none;
 }
 
 /* line 958, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
@@ -4124,8 +4741,6 @@ h6 {
 
 /* line 991, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */
 .disabled-radio input:checked + label {
-    background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
-    border: none;
 }
 
 /* line 999, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_elements.scss */

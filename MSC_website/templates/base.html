@@ -2,6 +2,7 @@
 <html class="no-js" lang="zxx">
 {% load static %}
 <head>
+    <meta name="author" content="https://github.com/arjavjain59998">
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Microsoft Student Chapter</title>
@@ -9,10 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" href=" {% static 'img/mscLO.ico' %} " type="image/x-icon">
     <!-- Place favicon.ico in the root directory -->
     <!-- CSS here -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href= "{% 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
@@ -22,6 +23,16 @@
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
     <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'razorblade.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styletest.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
     {% block css%}
     {% endblock %}
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
@@ -30,142 +41,192 @@
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
+            <header>
+                <div class="header-area ">
+                    <div id="sticky-header" class="main-header-area ">
+                        <div class="container-fluid p-0">
+                            <div class="row align-items-center justify-content-between no-gutters">
+                                <div class="col-xl-2 col-lg-2 col-md-2">
+                                    <div class="logo-img">
+                                        <a href="{% url 'index:home' %}">
+                                            <img src="{% static 'img/LogoM.png' %}" alt="" style="max-width: 10.666vh;">
 
-    <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area ">
-                <div class="container-fluid p-0">
-                    <div class="row align-items-center justify-content-between no-gutters">
-                        <div class="col-xl-2 col-lg-2">
-                            <div class="logo-img">
-                                <a href="index.html">
-                                    <img src="{% static 'img/LogoM.png' %}" alt="" style="max-width: 10.666vh;">
+                                        </a>
+                                        <div style="margin-left: 9.2444vh;margin-top: -8.0888vh;font-size: 1.6vh;color: #ffffff">
+                                            Microsoft <br>Student
+                                            <br>Chapter</div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-8">
+                                    <div class="main-menu  d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                                                    <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#home" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#events">Events</a>
+                                                        <a class="dropdown-item" href="#msc">About Msc</a>
+                                                        <a class="dropdown-item" href="#about_rana_sir">PS Rana Sir</a>
+                                                        <a class="dropdown-item" href="#members">Members</a>
+                                                        <a class="dropdown-item" href="#reach_us">Reach Us</a>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                                    <a class="nav-link" href="{% url 'members:gallery'%}">Gallery</a>
+                                                </li>
+                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                                    <a class="nav-link" href="{% url 'members:home' %}">Team</a>
+                                                </li>
+                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                                    <a class="nav-link" href="{% url 'events:register' %}">Register</a>
+                                                </li>
+                                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                                    <a class="nav-link" href="#reach_us">Contact</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
 
-                                </a>
-                                <div style="margin-left: 9.2444vh;margin-top: -8.0888vh;font-size: 1.6vh;color: #a9a8a0">Microsoft <br>Student
-                                    <br>Chapter</div>
+                                <div class="col-12 d-flex">
+                                    <div class=" align-self-center  mobile_menu d-block d-lg-none"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-8 col-lg-8">
-                            <div class="main-menu  d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a class="active" href="{% url 'index:home' %}">home</a></li>
-                                        <li><a href="{% url 'events:home' %}">Events</a></li>
-                                        </li>
-                                        <li><a href="{% url 'members:gallery'%}">Gallery </a>
-                                        </li>
-                                        <li><a href="{% url 'members:home' %}">About Us</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </nav>
+                    </div>
+                </div>
+            </header>
+    <!-- header-end -->
+
+{% block body %}
+{% endblock %}
+    <!-- footer_start -->
+   <footer class="footer footer_bg_1">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 col-lg-4">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    Follow Us
+                                </h3>
+                                <ul>
+                                    <li><a target="_blank" href="https://www.facebook.com/msctiet/" style="color: #272727;">Facebook</a></li>
+                                    <li><a target="_blank" href="https://twitter.com/chapter_student" style="color: #272727;">Twitter</a></li>
+                                    <li><a target="_blank" href="https://www.instagram.com/msc_tiet/" style="color:#272727;">Instagram</a></li>
+                                </ul>
+
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
+                        <div class="col-xl-4 col-md-4 col-lg-4">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    Links
+                                </h3>
+                                <ul>
+
+                                    <li><a target="_blank" href="{% url 'events:home' %}" style="color: #272727;">Events</a></li>
+                                    <li><a target="_blank" href="#msc" style="color: #272727;">About Us</a></li>
+                                    <li><a target="_blank" href="{% url 'members:gallery'%}" style="color: #272727;">Gallery</a></li>
+                                    <li><a target="_blank" href="{% url 'members:home' %}" style="color: #272727;">Team</a></li>
+                                    <li><a target="_blank" href="{% url 'events:register' %}" style="color: #272727;">Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 col-lg-4">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                    Venue
+                                </h3>
+                                <p style="color: #272727;text-align: left;">
+                                    Thapar Institute of Engineering and Technology,<br> Patiala, Punjab 147001 <br>
+                                    msc@thapar.edu <br>
+                                    +91 87270 95665
+
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- header-end -->
-    {% block body %}
-    {% endblock %}
+            <div class="copy-right_text">
+                <div class="container">
+                    <div class="footer_border"></div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <p class="copy_right text-center" style="color: #272727;">
 
-    <!-- footer_start -->
-    <footer class="footer footer_bg_1">
-        <div class="footer_top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 col-lg-4">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Follow Us
-                            </h3>
-                            <ul>
-                                <li><a target="_blank" href="https://www.facebook.com/msctiet/">Facebook</a></li>
-                                <li><a target="_blank" href="https://twitter.com/chapter_student">Twitter</a></li>
-                                <li><a target="_blank" href="https://www.instagram.com/msc_tiet/">Instagram</a></li>
-                                <!-- <li><a target="_blank" href="#">Youtube</a></li> -->
-                            </ul>
+                                Copyright &copy;<script>
+                                    document.write(new Date().getFullYear());
 
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 col-lg-4">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Links
-                            </h3>
-                            <ul>
-                                <li><a target="_blank" href="{% url 'events:home' %}">Events</a></li>
-                                <li><a target="_blank" href="{% url 'members:home' %}">About Us</a></li>
-                                <li><a target="_blank" href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 col-lg-4">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Venue
-                            </h3>
-                            <p>
-                                Thapar Institute of Engineering and Technology, Patiala, Punjab 147001 <br>
-                                msc@thapar.edu <br>
-                                +91 87270 95665
-
+                                </script> All rights reserved | Microsoft Student Chapter
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <p class="copy_right text-center">
-
-                            Copyright &copy;<script>
-                                document.write(new Date().getFullYear());
-                            </script> All rights reserved | Microsoft Student Chapter
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+        <!-- footer_end -->
     <!-- footer_end -->
     {% block endjs%}
     <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.js"></script>
-    <script src="js/plugins.js"></script>
+    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+        <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+        <!--contact js-->
 
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/main.js"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+    <script>
+            (function($) {
+                "use strict";
+
+                $(function() {
+                    var header = $(".start-style");
+                    $(window).scroll(function() {
+                        var scroll = $(window).scrollTop();
+
+                        if (scroll >= 10) {
+                            header.removeClass('start-style').addClass("scroll-on");
+                        } else {
+                            header.removeClass("scroll-on").addClass('start-style');
+                        }
+                    });
+                });
+
+                //Animation
+
+                $(document).ready(function() {
+                    $('body.hero-anime').removeClass('hero-anime');
+                });
+
+                //Menu On Hover
+
+                $('body').on('mouseenter mouseleave', '.nav-item', function(e) {
+                    if ($(window).width() > 750) {
+                        var _d = $(e.target).closest('.nav-item');
+                        _d.addClass('show');
+                        setTimeout(function() {
+                            _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+                        }, 1);
+                    }
+                });
+
+                //Switch light/dark
+
+                $("#switch").on('click', function() {
+                    if ($("body").hasClass("dark")) {
+                        $("body").removeClass("dark");
+                        $("#switch").removeClass("switched");
+                    } else {
+                        $("body").addClass("dark");
+                        $("#switch").addClass("switched");
+                    }
+                });
+
+            })(jQuery);
+
+        </script>
     {% endblock %}
 
 </body>
