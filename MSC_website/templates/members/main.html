@@ -1,32 +1,99 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
+{% load static %}
 {% block css %}
+<style>
+        /*body {
+            background: #000;
+        }*/
+
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+            margin: 20px auto;
+
+        }
+
+        .swiper-slide-container {
+            text-align: center;
+            font-size: 18px;
+            background: #000;
+            height: 100%;
+            max-width: 600px;
+            margin: auto;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .gallery-top {
+            height: 80%;
+            width: 100%;
+        }
+
+        .gallery-thumbs {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .gallery-thumbs .swiper-slide {
+            width: 20%;
+            height: 100%;;
+            opacity: 0.4;
+        }
+        .gallery-thumbs .swiper-slide img{
+            height:100px;
+        }
+
+        .gallery-thumbs .swiper-slide-active {
+            opacity: 1;
+        }
+
+        .gallery {
+            background: #000;
+            color: #fff;
+            margin-bottom: -1.25rem;
+            font: #fff
+        }
+
+    </style>
 {% endblock %}
 {% block body %}
-    <div class="slider_area slider_bg_1">
+<section class="sec1" id="home">
+        <div class="slider_area slider_bg_1" id="svg">
+        <div class="slider_area slider_bg_1">
         <div class="slider_text">
             <div class="container">
                 <div class="position_relv">
-                    <h1 class="opcity_text d-none d-lg-block">CONFIRENCE</h1>
                     <div class="row">
                         <div class="col-xl-9">
                             <div class="title_text">
                                 <h3>Members <br>
                                 </h3>
-                                <a href="#" class="boxed-btn-white">Add to your Calendar</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
+        </div>
+ </section>
 
-
-    </div>
     <div class="speakers_area">
         <h3><br></h3>
         <div class="container">
-            <h1>SECRETARIES</h1>
+            <h1>SECRETARIES AND HEADS</h1>
 
             <div class="row">
                 {% for s in sec %}

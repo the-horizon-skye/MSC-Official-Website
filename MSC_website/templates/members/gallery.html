@@ -1,30 +1,31 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
+{% load static %}
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
     <link rel="stylesheet" href="{% static 'css/pagination.css' %}">
 {% endblock %}
 {% block body %}
+<section class="sec1" id="home">
+        <div class="slider_area slider_bg_1" id="svg">
     <div class="slider_area slider_bg_1">
         <div class="slider_text">
             <div class="container">
                 <div class="position_relv">
-                    <h1 class="opcity_text d-none d-lg-block">CONFIRENCE</h1>
                     <div class="row">
                         <div class="col-xl-9">
                             <div class="title_text">
                                 <h3>Gallery <br>
                                 </h3>
-                                <a href="#" class="boxed-btn-white">Add to your Calendar</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
+        </div>
+</section>
+
 
 
     <div class="container">
