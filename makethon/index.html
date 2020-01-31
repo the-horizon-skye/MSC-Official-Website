@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class=" js no-touch csstransitions csstransformspreserve3d">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta name="author" content="https://github.com/arjavjain59998">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Microsoft Student Chapter</title>
+    <meta name="theme-color" content="#505050">
+    <meta name="msapplication-navbutton-color" content="#505050">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#505050">
+    <link rel="shortcut icon" href="images/mscLO.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/merge.css">
+    <link rel="stylesheet" href="css/judges.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 50%;
+            margin: 2rem;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #42256f;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+
+
+<body style="overscroll-behavior: none;">
+    <div class="pre-wrapper">
+        <div class="preloader">
+            <div class="loader__bar" style="background:#FBA04B"></div>
+            <div class="loader__bar" style="background:#E34791"></div>
+            <div class="loader__bar" style="background:#A3416D"></div>
+            <div class="loader__bar" style="background:#77025A"></div>
+            <div class="loader__bar" style="background:#390049"></div>
+            <div class="loader__ball" style="background:#FFF"></div>
+        </div>
+    </div>
+
+    <div class="chapter-logo">
+
+        <tr>
+            <a href="https://www.msctiet.co.in/" target="_blank">
+                <td>
+                    <img src="images/msc_logo.png" alt="MSC Logo">
+                </td>
+                <td>
+                    <p id="logotext">MICROSOFT STUDENT CHAPTER</p>
+                </td>
+            </a>
+        </tr>
+
+    </div>
+    <div class="toggle-btn" onclick="lockScroll()"><span class="one"></span> <span class="two"></span></div>
+    <div class="menu-overlay">
+        <div class="block b1"></div>
+        <div class="block b2"></div>
+    </div>
+    <div class="menu">
+        <div class="data">
+            <ul>
+                <li><a href="#" class="clickable" onclick="lockScroll();">MSC</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt1()">MAKEATHON</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt2()">ABOUT MAKEATHON</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt3()">JUDGES</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt4()">PROBLEM STATEMENT</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt5()">TRACKS</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt6()">SCHEDULE</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt7()">SPONSORS</a></li>
+                <li><a class="clickable" onclick="lockScroll(); gt8()">CONTACT US</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <section id="landing">
+            <div class="pos">
+                <div id="canvas">
+                    <div class="plane"><img src="images/line_pattern.png" alt="Logo"></div>
+
+                </div>
+            </div>
+            <div class="landing-wrapper">
+                <!-- <div class="landing-image"><img src="" alt="EVENT Logo" height=400 width=600></div> -->
+                <div class="landing-data">
+                    <div class="abc">
+                        <div style="margin-top:0%;z-index: 2;">
+                            <div class="typewriter">
+                                <h1>MAKEATHON 2K20!!</h1><br>
+                                <h2>by MICROSOFT STUDENT CHAPTER &nbsp</h2>
+                                <div class="about-links" style="justify-content: flex-end; align-items: flex-end; margin-top: 5em; margin: auto;"><a href="https://www.msctiet.co.in/" target="_blank" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-in" class="btx"><span>R</span><span>E</span><span>G</span><span>I</span><span>S</span><span>T</span><span>E</span><span>R</span>&nbsp;<span>N</span><span>O</span><span>W</span>
+                                        <b class="backgroundHover"></b> </a></div>
+                            </div>
+                        </div>
+                        <div class="chevron"><img src="images/down-chevron.svg" alt="scroll-down"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="About">
+            <h3 data-sal="fade" data-sal-delay="20" data-sal-easing="ease-in">
+                <br>MAKEATHON</h3>
+            <h2>
+                Inter College Hackethon
+            </h2>
+
+            <p align="justify" data-sal="fade" data-sal-delay="20" data-sal-easing="ease-in"> India, a nation projected
+                to drive the global production in span of 10 years, is facing many issues and computer science and IOT
+                serves as the o to solution for many of these issues. Our hackathon looks to harness the power of
+                amazing developers and the world of open source to develop state of the art to few problems. Our
+                hackathon aligns with the mission and vision of Make in india and prime minister's Digital India
+                Campaign. The hackers will be required to present a viable prototype of the solution they are
+                building.<br></p>
+            <div class="about-links"><a href="https://www.msctiet.co.in/" target="_blank" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-in" class="btx"><span>M</span><span>S</span><span>C</span>&nbsp;<span>T</span><span>I</span><span>E</span><span>T</span>
+                    <b class="backgroundHover"></b> </a><a href="http://www.thapar.edu/" target="_blank" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-in" class="btx2"><span>T</span><span>I</span><span>E</span><span>T</span> <b class="backgroundHover2"></b></a></div>
+        </section>
+
+
+
+        <section id="About">
+            <h3 data-sal="fade" data-sal-delay="20" data-sal-easing="ease-in">Judges and Mentors will be announced soon. Stay tuned !</h3>
+        </section>
+        <!-- <section id="judges">
+            <div id="judge-image">hello</div>
+            <div id="judge-content">hello</div>
+        </section> -->
+        <section id="Problem-statement">
+            <h3 data-sal="fade" data-sal-delay="20" data-sal-easing="ease-in">
+                <br>PROBLEM STATEMENT</h3>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: #33313b;">announced soon</div>
+                    <div class="swiper-slide" style="background: #33313b;">announced soon</div>
+                    <div class="swiper-slide" style="background: #33313b;">announced soon</div>
+                    <div class="swiper-slide" style="background: #33313b;">announced soon</div>
+                    <div class="swiper-slide" style="background: #33313b;">announced soon</div>
+                    <div class="swiper-slide" style="background: #33313b;">announced soon</div>
+                    <div class="swiper-slide" style="background: #33313b;">announced soon</div>
+                    <div class="swiper-slide" style="background: #33313b;">announced soon</div>
+                    <div class="swiper-slide" style="background: #33313b;">announced soon</div>
+                    <div class="swiper-slide" style="background: #33313b;">announced soon</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+        </section>
+        <section id="amazing_tracks">
+
+            <h3 data-sal="fade" data-sal-delay="20" data-sal-easing="ease-in">AMAZING TRACKS</h3>
+            <div class="cards">
+                <article class="card">
+                    <picture class="thumbnail">
+                        <img class="category__01" src="images/ai.png" />
+                    </picture>
+                    <div class="card-content">
+                        <p class="category category__01">AI/MACHINE LEARNING</p>
+                        <p>Machine learning focuses on the development of computer programs that can access data and use it learn for themselves</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <picture class="thumbnail">
+                        <img class="category__02" src="images/robotics.png" alt="" />
+                    </picture>
+                    <div class="card-content">
+                        <p class="category category__02">ROBOTICS</p>
+                        <p>Robotics deals with the design, construction, operation, and use of robots, as well as computer systems for their control, sensory feedback, and information processing</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <picture class="thumbnail">
+                        <img class="category__03" src="images/blockchain.png" alt="" />
+                    </picture>
+                    <div class="card-content">
+                        <p class="category category__03">BLOCK CHAIN</p>
+                        <p>A blockchain is a decentralized, distributed, and oftentimes public, digital ledger that is used to record transactions across many computers so that any involved record cannot be altered retroactively, without the alteration of all subsequent blocks</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <picture class="thumbnail">
+                        <img class="category__04" src="images/cryptography.png" alt="" />
+                    </picture>
+                    <div class="card-content">
+                        <p class="category category__04">CRYPTOGRAPHY</p>
+                        <p>Cryptography involves creating written or generated codes that allow information to be kept secret. Cryptography converts data into a format that is unreadable for an unauthorized user, allowing it to be transmitted without unauthorized entities decoding it back into a readable format, thus compromising the data.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="cards">
+                <article class="card">
+                    <picture class="thumbnail">
+                        <img class="category__03" src="images/algorithms.png" alt="" />
+                    </picture>
+                    <div class="card-content">
+                        <p class="category category__03">ALGORITHMS</p>
+                        <p>An algorithm is a step by step method of solving a problem. It is commonly used for data processing, calculation and other related computer and mathematical operations.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <picture class="thumbnail">
+                        <img class="category__01" src="images/hack.png" alt="" />
+                    </picture>
+                    <div class="card-content">
+                        <p class="category category__01">OPEN HACK</p>
+                        <p>Hacking is an attempt to exploit a computer system or a private network inside a computer. Simply put, it is the unauthorised access to or control over computer network security systems for some illicit purpose.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <picture class="thumbnail">
+                        <img class="category__04" src="images/Android_robot.png" alt="" />
+                    </picture>
+                    <div class="card-content">
+                        <p class="category category__04">APP DEVELOPMENT</p>
+                        <p>app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital assistants, enterprise digital assistants or mobile phones.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <picture class="thumbnail">
+                        <img class="category__01" src="images/vr.png" alt="" />
+                    </picture>
+                    <div class="card-content">
+                        <p class="category category__01">AR/VR</p>
+                        <p>Augmented reality (AR) is a type of virtual reality technology that blends what the user sees in their real surroundings with digital content generated by computer software.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="Schedule">
+            <h3 data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in">SCHEDULE</h3>
+            <div class="schedule-data" data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in">
+                <div class="timeline">
+                    <div class="timeline__wrap">
+                        <div class="timeline__items">
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p class="timeline__date" style="color: #ce0f3d;">DAY 1</p>
+                                    <p>9:30 AM: Registration</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p class="timeline__date" style="color: #ce0f3d;">DAY 1</p>
+                                    <p>10:00 AM: Introduction</p>
+
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p class="timeline__date" style="color: #ce0f3d;">DAY 1</p>
+                                    <p>11:30 PM: Hack Starts</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p class="timeline__date" style="color: #ce0f3d;">DAY 1</p>
+                                    <p>2:30 PM: Lunch </p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p class="timeline__date" style="color: #ce0f3d;">DAY 1</p>
+                                    <p>5:00 PM: Checkpoint-1</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p class="timeline__date" style="color: #ce0f3d;">DAY 1</p>
+                                    <p>8:00 PM: Dinner </p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p class="timeline__date" style="color: #ce0f3d;">DAY 1</p>
+                                    <p>9:30 PM: Checkpoint-2 </p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p class="timeline__date" style="color: #ce0f3d;">DAY 2</p>
+                                    <p>00:00 AM: Josh Activity </p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p class="timeline__date" style="color: #ce0f3d;">DAY 2</p>
+                                    <p>1:00 AM: High Tea and Snacks </p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p class="timeline__date" style="color: #ce0f3d;">DAY 2</p>
+                                    <p>03:00 AM: Sponsor Notes </p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p class="timeline__date" style="color: #ce0f3d;">DAY 2</p>
+                                    <p> 5:30 AM: Checkpoint-3 </p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p class="timeline__date" style="color: #ce0f3d;">DAY 2</p>
+                                    <p>9:00 AM: Breakfast </p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p class="timeline__date" style="color: #ce0f3d;">DAY 2</p>
+                                    <p>11:30 AM: Pitching Starts </p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p class="timeline__date" style="color: #ce0f3d;">DAY 2</p>
+                                    <p>1:00 PM: Prize Distribution </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="Sponsors">
+            <h3 data-sal="fade" data-sal-delay="20" data-sal-easing="ease-in">PREVIOUS SPONSORS</h3>
+            <div class="sponsors-data" data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in"><img src="images/Paytm.png" alt="PayTm"> <img src="images/Coding_blocks.png" alt="Coding Blocks"> <img src="images/Balsamiq_logo.png" alt="Balsamiq"> <img src="images/digitalocean.png" alt="DigitalOcean"> <img src="images/github.png" alt="GitHub"> <img src="images/Hasura_logo.png" alt="Hasura"> <img src="images/hacks.png" alt="HackSociety"> <img src="images/inkmonk_logo.png" alt="inkmonk"> <img src="images/LCO_logo.png" alt="LCO"> <img src="images/sticker-mule.svg" alt="Stickermule"> <img src="images/fab_hotels.png" alt="fabhotels"> <img src="images/Fusion_logo.png" alt="FusionSoft"></div>
+        </section>
+        <section id="Contact">
+            <h3 data-sal-delay="5" data-sal-easing="ease-in">REACH US</h3>
+
+            <iframe width="70%" height="50%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6885.862476915668!2d76.35917501557674!3d30.352904049904126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39102f534a87b5c5%3A0xda1d3ed337e382b3!2sThapar+University%2C+Prem+Nagar%2C+Patiala%2C+Punjab+147004!5e0!3m2!1sen!2sin!4v1551524319562" style="border:0" allowfullscreen></iframe>
+
+            <div class="contact-data" data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in"><a class="tooltip" href="mailto:msc@thapar.edu" data-sal="fade" data-sal-delay="200" data-sal-easing="ease-in"><img src="images/envelope.svg" alt="mail"><span class="tooltiptext">Mail to MSC</span></a>
+                <a class="tooltip" href="https://www.msctiet.co.in/" target="_blank" data-sal="fade" data-sal-delay="250" data-sal-easing="ease-in"><img src="images/globe.svg" alt="website"><span class="tooltiptext">Visit Our Website</span></a>
+                <a href="tel:9997630003" class="tooltip" data-sal="fade" data-sal-delay="300" data-sal-easing="ease-in" title="+91 99976 30003"><img src="images/phone.svg" alt="call"> <span class="tooltiptext">+91 99976 30003</span> </a>
+                <a class="tooltip" href="https://www.facebook.com/msctiet/" target="_blank" data-sal="fade" data-sal-delay="300" data-sal-easing="ease-in"><img src="images/facebook.svg" alt="facebook">
+                    <span class="tooltiptext">Visit Our Facebook Page</span></a>
+                <a class="tooltip" href="https://twitter.com/chapter_student" data-sal="fade" data-sal-delay="350" data-sal-easing="ease-in"><img src="images/twitter.svg" alt="twitter"><span class="tooltiptext">Visit Our Twitter Page</span></a></div>
+        </section>
+    </div>
+</body>
+<script src="scripts/card.js"></script>
+<script src="scripts/merge.js"></script>
+<script>
+    sal({
+        threshold: 0.75,
+        once: false
+    });
+
+</script>
+<script src="scripts/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        // init: false,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+        }
+    });
+
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134431597-1"></script>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-134431597-1");
+
+</script>
+<script>
+    $(document).ready(function() {
+        //Preloader
+        $(window).on("load", function() {
+            $(".pre-wrapper").fadeOut(400, () => {
+                $(".pre-wrapper").css("display", "none");
+            });
+        });
+    });
+
+</script>
+
+</html>
