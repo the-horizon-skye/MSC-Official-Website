@@ -15,10 +15,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
-    {% block css%}
     <link rel="stylesheet" href="{% static 'css/card.css' %}">
     <link rel="stylesheet" href="{% static 'css/merge.css' %}">
-    <link rel="stylesheet" href="{% static 'css/judges.css' %}">
     <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
     <style>
         .swiper-container {
@@ -46,10 +44,8 @@
         }
 
     </style>
-{% endblock %}
 </head>
 <body style="overscroll-behavior: none;">
-{% block body %}
     <div class="pre-wrapper">
         <div class="preloader">
             <div class="loader__bar" style="background:#FBA04B"></div>
@@ -64,7 +60,7 @@
     <div class="chapter-logo">
 
         <tr>
-            <a href="https://www.msctiet.co.in/" target="_blank">
+            <a href="{% url 'index:home' %}">
                 <td>
                     <img src="{% static 'images/msc_logo.png' %}" alt="MSC Logo">
                 </td>
@@ -369,11 +365,9 @@
                 <a class="tooltip" href="https://twitter.com/chapter_student" data-sal="fade" data-sal-delay="350" data-sal-easing="ease-in"><img src="{% static 'images/twitter.svg' %}" alt="twitter"><span class="tooltiptext">Visit Our Twitter Page</span></a></div>
         </section>
     </div>
-{% endblock %}
 </body>
-{% block endjs %}
-<script src="{% static 'scripts/card.js' %}"></script>
-<script src="{% static 'scripts/merge.js' %}"></script>
+<script src="{% static 'js/card.js' %}"></script>
+<script src="{% static 'js/merge.js' %}"></script>
 <script>
     sal({
         threshold: 0.75,
@@ -381,7 +375,7 @@
     });
 
 </script>
-<script src="{% static 'scripts/swiper.min.js' %}"></script>
+<script src="{% static 'js/swiper.min.js' %}"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
@@ -433,5 +427,4 @@
     });
 
 </script>
-{% endblock %}
 </html>

@@ -1,6 +1,8 @@
 from django import forms
 
-CHOICES = ['Event-1','Event-2','Event-3']
+CHOICES = ((1, 'Makeathon'),
+        (2, 'Bootcamp'),
+        (3, 'Guest Talk'))
 class Register(forms.Form):
     name = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control'}),label='name')
     email = forms.EmailField(widget=forms.EmailInput(attrs={'class':'form-control'}),label='email')
