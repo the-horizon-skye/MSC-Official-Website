@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'index',
     'members',
     'events',
+    'makeathon',
     'import_export'
 ]
 

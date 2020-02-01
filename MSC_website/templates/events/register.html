@@ -25,13 +25,19 @@
         </div>
  </section>
     <!-- ================ contact section start ================= -->
-    <section class="contact-section">
+<section class="contact-section" style="background: #d1f7f5;">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-lg-2"></div>
+          <div
+            class="col-lg-8"
+            style="background: #f3f5f5; padding-top:4vh; opacity: 0.75; margin-bottom: 0px;"
+          >
             <h2 class="contact-title">Register Now!</h2>
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8" style="background: #f3f5f5; opacity: 0.75">
             <form
               class="form-contact contact_form"
               action="{% url 'events:register' %}"
@@ -153,19 +159,21 @@
                     <p style="color: black;"><strong>Event-1</strong></p>
                     <div class="confirm-checkbox" style="border: solid;">
                       <input type="checkbox" id="event1" />
+                      <label for="event1"></label>
                     </div>
                   </div>
                   <div class="switch-wrap d-flex justify-content-between">
                     <p style="color: black;"><strong>Event-2</strong></p>
                     <div class="confirm-checkbox" style="border:solid;">
                       <input type="checkbox" id="event2" />
-
+                      <label for="event2"></label>
                     </div>
                   </div>
                   <div class="switch-wrap d-flex justify-content-between">
                     <p style="color: black;"><strong>Event-3</strong></p>
                     <div class="confirm-checkbox" style="border: solid;">
-                      <input type="checkbox" id="event3"/>
+                      <input type="checkbox" id="event3" />
+                      <label for="event3"></label>
                     </div>
                   </div>
                 </div>
