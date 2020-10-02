@@ -25,11 +25,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'index',
-    'members',
-    'events',
-    'makeathon',
-    'import_export'
+    'index.apps.IndexConfig',
+    'members.apps.MembersConfig',
+    'events.apps.EventsConfig',
+    'makeathon.apps.MakeathonConfig',
+    'import_export.apps.Import_exportConfig'
 ]
 
 MIDDLEWARE = [
